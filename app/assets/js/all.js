@@ -1,5 +1,5 @@
 const navLi = document.querySelectorAll("nav li");
-const path_name = window.location.pathname.slice(1, -5);
+const path_name = window.location.pathname.split("/").pop().slice(0, -5);
 const index = document.querySelector(".index");
 const admin = document.querySelector(".admin");
 
