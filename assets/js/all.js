@@ -1,7 +1,7 @@
 "use strict";
 
 var navLi = document.querySelectorAll("nav li");
-var path_name = window.location.pathname.slice(1, -5);
+var path_name = window.location.pathname.split("/").pop().slice(0, -5);
 var index = document.querySelector(".index");
 var admin = document.querySelector(".admin");
 navLi.forEach(function (e) {
