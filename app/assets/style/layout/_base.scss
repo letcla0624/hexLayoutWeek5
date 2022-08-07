@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html,
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, sans-serif;
+  min-width: 1280px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+a {
+  display: flex;
+  text-decoration: none;
+  color: $dark;
+}
+textarea {
+  outline: none;
+}
+::placeholder {
+  color: $gray-400;
+  opacity: 1;
+}
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+  color: $gray-400;
+}
