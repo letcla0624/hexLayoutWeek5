@@ -13,9 +13,19 @@ navLi.forEach(function (e) {
   });
 });
 
-if (path_name === "" || path_name === "index" || path_name === "assignment-reply") {
+if (path_name === "" || path_name === "index") {
   index.classList.add("active");
 } else if (path_name === "admin") {
   admin.classList.add("active");
 }
+
+var someoneReplay = document.querySelector(".someoneReplay");
+var replyBtn = document.querySelector(".replyBtn");
+var bottomBtn = document.querySelector(".bottomBtn");
+var newReply = document.querySelector(".newReply");
+replyBtn.addEventListener("click", function () {
+  someoneReplay.classList.add("d-none");
+  bottomBtn.classList.add("d-none");
+  newReply.classList.remove("d-none");
+});
 //# sourceMappingURL=all.js.map

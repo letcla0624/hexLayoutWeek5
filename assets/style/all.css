@@ -5649,22 +5649,22 @@ fieldset:disabled .btn {
 
 .list-group {
   --bs-list-group-color: #212529;
-  --bs-list-group-bg: #fff;
+  --bs-list-group-bg: transparent;
   --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
-  --bs-list-group-border-width: 1px;
+  --bs-list-group-border-width: 0;
   --bs-list-group-border-radius: 2px;
-  --bs-list-group-item-padding-x: 1rem;
-  --bs-list-group-item-padding-y: 0.5rem;
+  --bs-list-group-item-padding-x: 0;
+  --bs-list-group-item-padding-y: 0;
   --bs-list-group-action-color: #495057;
   --bs-list-group-action-hover-color: #495057;
   --bs-list-group-action-hover-bg: #f8f9fa;
   --bs-list-group-action-active-color: #212529;
   --bs-list-group-action-active-bg: #e9ecef;
   --bs-list-group-disabled-color: #6c757d;
-  --bs-list-group-disabled-bg: #fff;
+  --bs-list-group-disabled-bg: transparent;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #198754;
-  --bs-list-group-active-border-color: #198754;
+  --bs-list-group-active-bg: transparent;
+  --bs-list-group-active-border-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14718,6 +14718,16 @@ a {
   color: #212529;
 }
 
+a:hover {
+  color: #198754;
+  opacity: 0.8;
+}
+
+main {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
 textarea {
   outline: none;
 }
@@ -14752,17 +14762,23 @@ textarea {
   color: #ced4da;
 }
 
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875em;
+  border-radius: 0.2rem;
+}
+
 .avatar {
   width: 40px;
   height: 40px;
 }
 
-nav .nav-item {
-  border-left: 4px solid transparent;
+.material-icons:hover {
+  color: #198754;
 }
 
-nav .nav-item a {
-  color: #212529;
+nav .nav-item {
+  border-left: 4px solid transparent;
 }
 
 nav .nav-item.active {
@@ -14784,11 +14800,6 @@ nav .nav-item.active a {
   overflow-y: scroll;
 }
 
-.assignment__ul--replay {
-  max-height: calc(100vh - 92.8px - 26px - 72.2px);
-  overflow-y: scroll;
-}
-
 .modal__img {
   min-width: 141px;
   height: 141px;
@@ -14796,6 +14807,10 @@ nav .nav-item.active a {
 
 .modal__img img {
   height: inherit;
+}
+
+.addNew:hover {
+  color: #198754;
 }
 
 /*# sourceMappingURL=all.css.map */
