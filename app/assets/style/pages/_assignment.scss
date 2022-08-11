@@ -1,9 +1,6 @@
 nav {
   .nav-item {
     border-left: 4px solid transparent;
-    a {
-      color: $dark;
-    }
     &.active {
       border-left: 0.25rem solid $primary;
       a {
@@ -21,9 +18,5 @@ nav {
     max-height: calc(100vh - 92.8px - 26px - 72.2px - 38px - 64px);
     min-height: 240px;
     overflow-y: scroll;
-    &--replay {
-      max-height: calc(100vh - 92.8px - 26px - 72.2px);
-      overflow-y: scroll;
-    }
   }
 }

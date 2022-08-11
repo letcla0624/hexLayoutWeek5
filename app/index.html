@@ -13,16 +13,15 @@ engine: ejs
       </select>
     </div>
     <div class="d-flex">
-      <span role="button" class="material-icons me-4">search</span>
-      <span role="button" class="material-icons">notifications_active</span>
+      <a href="#"><span role="button" class="material-icons me-4">search</span></a>
+      <a href="#"><span role="button" class="material-icons">notifications_active</span></a>
     </div>
   </div>
   <div class="row gx-3">
     <div class="col-5">
-      <div class="d-flex align-items-center mb-1" role="button">
-        <p class="fw-bold me-2 mb-0">All (4)</p>
-        <span class="material-icons text-primary">keyboard_arrow_down</span>
-      </div>
+      <select class="border-0 fw-bold pe-2 mb-1" role="button">
+        <option value="All">All (4)</option>
+      </select>
       <ul class="border list-unstyled">
         <li class="border-bottom bg-light">
           <a href="#" class="justify-content-between fs-8 p-2d5">
@@ -121,7 +120,7 @@ engine: ejs
                     </div>
                   </div>
                 </li>
-                <li>
+                <li class="someoneReplay">
                   <div class="d-flex justify-content-between align-items-center p-3">
                     <div class="d-flex">
                       <img src="./assets/images/andychen.jpeg" alt="andy chen" class="avatar rounded-circle">
@@ -131,8 +130,8 @@ engine: ejs
                       </div>
                     </div>
                     <div class="d-flex">
-                      <span role="button" class="material-icons-outlined me-4">star_border</span>
-                      <span role="button" class="material-icons">edit</span>
+                      <a href="#"><span role="button" class="material-icons-outlined me-4">star_border</span></a>
+                      <a href="#"><span role="button" class="material-icons">edit</span></a>
                     </div>
                   </div>
                   <div class="ps-6 pe-4d5">
@@ -143,29 +142,52 @@ engine: ejs
                         a, b, c and d sit on. There is space below that line for the descenders you find on letters
                         like
                         g,
-                        j, p and q. <br><br> You can: <br><br>　
-                        • adjust the <kbd class="bg-light text-primary">vertical-align</kbd> of the image to
-                        position
-                        it
-                        elsewhere
-                        (e.g. <kbd class="bg-light text-primary">middle</kbd>le ) or <br>　• change the <kbd
-                          class="bg-light text-primary">display</kbd> so it isn’t inline.
+                        j, p and q. <br><br> You can:
                       </p>
+                      <ul>
+                        <li>adjust the <code class="bg-light text-primary">vertical-align</code> of the image to
+                          position
+                          it
+                          elsewhere
+                          (e.g. <code class="bg-light text-primary">middle</code>le ) or</li>
+                        <li>change the <code class="bg-light text-primary">display</code> so it isn’t inline.</li>
+                      </ul>
                     </article>
                   </div>
                 </li>
               </ul>
             </div>
+            <div class="card border-0 border-top rounded-0 newReply d-none">
+              <div class="card-header d-flex align-items-center gap-4 px-4 py-3">
+                <select class="fw-bold border-0 bg-light pe-2" role="button">
+                  <option value="Body Text">Body Text</option>
+                </select>
+                <span role="button" class="material-icons-outlined">format_bold</span>
+                <span role="button" class="material-icons">format_italic</span>
+                <span role="button" class="material-icons">format_list_bulleted</span>
+                <span role="button" class="material-icons">format_list_numbered</span>
+                <span role="button" class="material-icons">insert_photo</span>
+                <span role="button" class="material-icons">link</span>
+                <span role="button" class="material-icons">code</span>
+              </div>
+              <div class="card-body px-4">
+                <textarea cols="30" rows="8" placeholder="Reply an answer…" class="w-100 border-0"></textarea>
+                <div class="d-flex justify-content-end align-items-center gap-3">
+                  <a href="index.html" class="btn btn-outline-primary fw-bold">Cancel</a>
+                  <a href="index.html" class="btn btn-primary fw-bold">Reply</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between bottomBtn">
           <div class="d-flex align-items-center gap-4">
-            <span role="button" class="material-icons fw-bold">keyboard_arrow_left</span>
-            <span role="button" class="material-icons fw-bold">keyboard_arrow_right</span>
+            <a href="#"><span role="button" class="material-icons fw-bold">keyboard_arrow_left</span></a>
+            <a href="#"><span role="button" class="material-icons fw-bold">keyboard_arrow_right</span></a>
           </div>
           <div class="d-flex align-items-center gap-3">
             <a href="#" class="btn btn-outline-primary fw-bold">Mark as read</a>
-            <a href="assignment-reply.html" class="btn btn-primary fw-bold">Reply</a>
+            <a href="#" class="btn btn-primary fw-bold replyBtn">Reply</a>
           </div>
         </div>
       </div>

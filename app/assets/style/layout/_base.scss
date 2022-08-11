@@ -15,6 +15,14 @@ a {
   display: flex;
   text-decoration: none;
   color: $dark;
+  &:hover {
+    color: $primary;
+    opacity: 0.8;
+  }
+}
+main {
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 textarea {
   outline: none;
@@ -26,4 +34,9 @@ textarea {
 :-ms-input-placeholder,
 ::-ms-input-placeholder {
   color: $gray-400;
+}
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875em;
+  border-radius: 0.2rem;
 }

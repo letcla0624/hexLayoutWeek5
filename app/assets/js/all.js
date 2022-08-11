@@ -10,12 +10,19 @@ navLi.forEach((e) => {
   });
 });
 
-if (
-  path_name === "" ||
-  path_name === "index" ||
-  path_name === "assignment-reply"
-) {
+if (path_name === "" || path_name === "index") {
   index.classList.add("active");
 } else if (path_name === "admin") {
   admin.classList.add("active");
 }
+
+const someoneReplay = document.querySelector(".someoneReplay");
+const replyBtn = document.querySelector(".replyBtn");
+const bottomBtn = document.querySelector(".bottomBtn");
+const newReply = document.querySelector(".newReply");
+
+replyBtn.addEventListener("click", () => {
+  someoneReplay.classList.add("d-none");
+  bottomBtn.classList.add("d-none");
+  newReply.classList.remove("d-none");
+});

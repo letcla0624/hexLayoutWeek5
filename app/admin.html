@@ -8,7 +8,7 @@ engine: ejs
   <div class="d-flex justify-content-between align-items-center py-4d5 mb-3">
     <div class="d-flex gap-5">
       <h1 class="fw-bold fs-4 mb-0">Admin</h1>
-      <div class="d-flex align-items-center" role="button" data-bs-toggle="modal" data-bs-target="#newModal">
+      <div class="d-flex align-items-center addNew" role="button" data-bs-toggle="modal" data-bs-target="#newModal">
         <span class="material-icons me-2 text-primary">add</span>
         <span>Add New Admin</span>
       </div>
@@ -18,7 +18,7 @@ engine: ejs
       <span role="button" class="material-icons">notifications_active</span>
     </div>
   </div>
-  <table class="table">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th scope="col">ID</th>
@@ -306,11 +306,11 @@ engine: ejs
           <h5 class="fw-bold mb-3">Account</h5>
           <div class="mb-3">
             <label for="name" class="form-label fs-7">Edit Admin</label>
-            <input type="text" class="form-control" id="name" value="Emir Wicks" disabled>
+            <input type="text" class="form-control" id="name" value="Emir Wicks" readonly disabled>
           </div>
           <div>
             <label for="email" class="form-label fs-7">email</label>
-            <input type="email" class="form-control" id="email" value="emir.wicks@mail.com" disabled>
+            <input type="email" class="form-control" id="email" value="emir.wicks@mail.com" readonly disabled>
           </div>
         </div>
         <div class="py-4 border-bottom">
