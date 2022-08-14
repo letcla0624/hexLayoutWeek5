@@ -5649,22 +5649,22 @@ fieldset:disabled .btn {
 
 .list-group {
   --bs-list-group-color: #212529;
-  --bs-list-group-bg: transparent;
-  --bs-list-group-border-color: transparent;
-  --bs-list-group-border-width: 0;
+  --bs-list-group-bg: #fff;
+  --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
+  --bs-list-group-border-width: 1px;
   --bs-list-group-border-radius: 2px;
-  --bs-list-group-item-padding-x: 0;
-  --bs-list-group-item-padding-y: 0;
+  --bs-list-group-item-padding-x: 1rem;
+  --bs-list-group-item-padding-y: 0.75rem;
   --bs-list-group-action-color: #495057;
   --bs-list-group-action-hover-color: #495057;
-  --bs-list-group-action-hover-bg: transparent;
+  --bs-list-group-action-hover-bg: #f8f9fa;
   --bs-list-group-action-active-color: #212529;
-  --bs-list-group-action-active-bg: transparent;
+  --bs-list-group-action-active-bg: #e9ecef;
   --bs-list-group-disabled-color: #6c757d;
-  --bs-list-group-disabled-bg: transparent;
+  --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: transparent;
-  --bs-list-group-active-border-color: transparent;
+  --bs-list-group-active-bg: #f8f9fa;
+  --bs-list-group-active-border-color: rgba(0, 0, 0, 0.125);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
